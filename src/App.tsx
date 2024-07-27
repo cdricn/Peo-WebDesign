@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './assets/fonts.css'
+import headerimg from './assets/headerimg.png'
+import Header from './assets/components/Header.tsx'
 import Container from './assets/components/Container.tsx'
 import Footer from './assets/components/Footer.tsx'
 import './App.css'
@@ -9,23 +11,31 @@ function App() {
   return (
     <>
       <div>
-        <div>bg image</div>
-        <div>
-          <Container />
-        </div>
+        {//ternary operator to check min width and switch header to footer
+        }<Header />
+      </div>
 
-        <div>
-          <Container />
+      <div className='wrapper'>
+        <div className='ad-images'>
+          <img src={headerimg}></img>
         </div>
-
-        <div>
-          <Container />
+        
+        <div className='group-layout'>
+          <div>
+            <Container />
+          </div>
+          <div>
+            <Container />
+          </div>
+          <div>
+            <Container />
+          </div>
         </div>
+      </div>
 
-        <div>footer, sticky
-          <Footer />
-        </div>
-
+      <div>
+        {//ternary operator to check min width and switch header to footer
+        }
       </div>
     </>
   )

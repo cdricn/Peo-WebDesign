@@ -1,14 +1,13 @@
 import Item from './Item.tsx'
 import './Container.css'
+import '../fonts.css'
 
 function Container() {
   return (
     <>
-      <div>title
-        <h1>Top Deals</h1>
-      </div>
-      <div>item container
-        <div>
+      <div className='group-container'>
+        <h2>Top Deals</h2>
+        <div className='items-flex'>
           <Item />
         </div>
       </div>

@@ -1,0 +1,23 @@
+.header {
+  background-color: #FF9E00;
+  height: 5%;
+}
+
+.header-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.header-logo{
+  margin: 5px;
+  width: 50px;
+  height: 60px;  
+}
+
+.header-searchbar {
+  background-color: white;
+  width: 500px;
+  height: 50px;
+}
