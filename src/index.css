@@ -5,7 +5,7 @@
   font-size: 16px;
 
   color-scheme: light dark;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 9, 58, 0.87);
   background-color: #e6e6e6;
 
   font-synthesis: none;
@@ -27,7 +27,7 @@
 
 body {
   min-height: 100vh;
-  overflow:auto;
+  overflow: auto;
 }
 
 img, picture, svg, video {
