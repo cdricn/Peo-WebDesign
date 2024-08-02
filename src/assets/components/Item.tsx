@@ -1,21 +1,24 @@
 import './Item.css'
-import topimage1 from '../topdeal-image1.jpg'
 
 function Item() {
+  const test = ["", "", ""]
+
   return (
     <>
-      <div className='item-box'>
-        <div>
-          <img src={topimage1}></img>
-        </div>
-        <div className='item-description'>
-          <p className='item-title'>Wireless Headphones Model TB High Definition Audio</p>
-          <span className='item-price'>P500</span>
-        </div>
-        <div className='item-rating'>
-          <span>rating</span>
-        </div>
-      </div>
+      {
+        // data(jsonimport).name(jsonexport).map((item, index)) => (
+        // <div className='item-box' key={index}>
+        // <div>
+        //  <img src={item.thumbnail}></img>
+        // </div>
+        // <div className='item-description'>
+        //  <p className='item-title'>{item.title}</p>
+        //  <span className='item-price'>{item.price}</span>
+        // </div>
+        // <div className='item-rating'>
+        //  <span>{item.rating}</span>
+        // </div>
+      }
     </>
   );
 }

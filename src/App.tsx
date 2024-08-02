@@ -3,7 +3,6 @@ import './assets/fonts.css'
 import headerimg from './assets/headerimg.png'
 import Header from './assets/components/Header.tsx'
 import Container from './assets/components/Container.tsx'
-import Footer from './assets/components/Footer.tsx'
 import './App.css'
 
 function App() {
@@ -22,13 +21,27 @@ function App() {
         
         <div className='group-layout'>
           <div>
-            <Container />
+            <div className='group-container'>
+              <h2>Categories</h2>
+            </div>
           </div>
           <div>
-            <Container />
+            <div className='group-container'>
+              <h2>Top Deals</h2>
+              <Container />
+            </div>
           </div>
           <div>
-            <Container />
+            <div className='group-container'>
+              <h2>Recommended for you</h2>
+              <Container />
+            </div>
+          </div>
+          <div>
+            <div className='group-container'>
+              <h2>Recommended for you</h2>
+              <Container />
+            </div>
           </div>
         </div>
       </div>

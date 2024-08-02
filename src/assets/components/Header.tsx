@@ -7,12 +7,17 @@ import { CgShoppingCart } from "react-icons/cg";
 
 
 function Header() {
+
+  function test() {
+    console.log("Click");
+  }
+
   return (
     <>
       <div className='navbar'>
         <div className='navbar-left'>
           <a href='http://localhost:5173/'>
-            <img src={logo} className='logo'></img>
+            <img src={logo} className='logo pointer'></img>
           </a>    
         </div>
         <div className='navbar-middle'>
@@ -22,19 +27,19 @@ function Header() {
               type="text"
               placeholder="Search"
             ></input>
-            <div className='button-search'>
+            <div className='button-search pointer' onClick={test}>
               <GoSearch />
             </div>
           </form>
         </div>
         <div className='navbar-right'>
-          <div className='navbar-icon'>
+          <div className='navbar-icon pointer' onClick={test}>
             <CgShoppingCart />  
           </div>
-          <div className='navbar-icon'>
+          <div className='navbar-icon pointer' onClick={test}>
             <GoPerson />
           </div>
-          <div className='navbar-icon'>
+          <div className='navbar-icon pointer' onClick={test}>
             <GoBell />
           </div>
         </div>
