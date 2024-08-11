@@ -1,2 +1,2 @@
-# E-commerce webpage
-Mock template for an e-commerce webpage
+# Mock homepage
+Template designs for a profile page. 
