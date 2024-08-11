@@ -1,40 +1,13 @@
-/* 157CFF */
-img {
-  margin: auto;
-  -webkit-user-drag: none;
-}
-h2 {
-  text-align: left;
-  font-size: 1.5rem;
+.main-content {
+  margin-top: 2rem;
 }
 
-#root {
-  margin: 0 auto;
-  text-align: center;
+.main-links {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 100%;
 }
 
-.ad-images {
-  background-color: #FFDCA2;
-}
-
-.wrapper {
-  margin: 0 auto;
-  width: 70vw;
-  max-width: 1400px;
-}
-
-.group-layout {
-  display: flex;
-  flex-direction: column;
-}
-.group-container {
-  margin-bottom: 30px;
-  padding: 10px;
-  background-color: white;
-}
-
-@media screen and (width <= 1024px) {
-  .wrapper {
-    width: 100%;
-  }
+.main-footer {
+  position: relative;
 }

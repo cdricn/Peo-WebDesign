@@ -1,12 +1,12 @@
 :root {
-  font-family: 'CocogooseLight', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'InterBold', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-size: 16px;
 
   color-scheme: light dark;
-  color: rgba(0, 9, 58, 0.87);
-  background-color: #e6e6e6;
+  color: #F891A9;
+  background-color: rgb(252, 252, 252);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,6 +28,11 @@
 body {
   min-height: 100vh;
   overflow: auto;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 img, picture, svg, video {

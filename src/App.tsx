@@ -1,54 +1,32 @@
 import { useState } from 'react'
+import Navbar from './assets/components/Navbar.tsx'
+import ProfilePage from './assets/components/ProfilePage.tsx'
+import LinkGroup from './assets/components/LinkGroup.tsx'
+import Footer from './assets/components/Footer.tsx'
 import './assets/fonts.css'
-import headerimg from './assets/headerimg.png'
-import Header from './assets/components/Header.tsx'
-import Container from './assets/components/Container.tsx'
 import './App.css'
 
 function App() {
 
   return (
     <>
-      <div>
-        {//ternary operator to check min width and switch header to footer
-        }<Header />
+      <div className='main-nav'>
+        <Navbar />
       </div>
-
-      <div className='wrapper'>
-        <div className='ad-images'>
-          <img src={headerimg}></img>
-        </div>
-        
-        <div className='group-layout'>
-          <div>
-            <div className='group-container'>
-              <h2>Categories</h2>
-            </div>
-          </div>
-          <div>
-            <div className='group-container'>
-              <h2>Top Deals</h2>
-              <Container />
-            </div>
-          </div>
-          <div>
-            <div className='group-container'>
-              <h2>Recommended for you</h2>
-              <Container />
-            </div>
-          </div>
-          <div>
-            <div className='group-container'>
-              <h2>Recommended for you</h2>
-              <Container />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        {//ternary operator to check min width and switch header to footer
+      <div className='main-content'>
+        {
+          //<MainPage />
+          <ProfilePage />
+          //<ContactPage />
+          //<SheetPage />
+          //<ToSPage />
         }
+      </div>
+      <div className='main-links'>
+        <LinkGroup />
+      </div>
+      <div className='main-footer'>
+        <Footer />
       </div>
     </>
   )

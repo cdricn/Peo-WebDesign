@@ -1,7 +1,0 @@
-.items-flex {
-  display: flex;
-  flex-direction: row;
-  gap: 1vh;
-  overflow: auto;
-}
-

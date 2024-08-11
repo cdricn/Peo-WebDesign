@@ -28,6 +28,10 @@
     url('./fonts/Lemonmilk/LEMONMILK-Medium.otf') 
 }
 
-
+@font-face{
+    font-family: "InterBold";
+    src:local("Inter-Bold"),
+    url('./fonts/Inter/Inter-Bold.ttf') 
+}
 
 

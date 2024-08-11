@@ -1,0 +1,17 @@
+.navbar {
+  position: inline;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px #E4E4E4;
+}
+
+.navbar-items {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 7%;
+  font-family: 'InterBold';
+  font-size: 1.5rem;
+}

@@ -1,0 +1,17 @@
+.footer {
+  padding-top: 2rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background-color: #EAEBFD;
+  color: #BDC1F4;
+  text-align: right;
+}
+
+@media (width > 2900px){
+  .footer {
+    position: fixed;
+  }
+}
