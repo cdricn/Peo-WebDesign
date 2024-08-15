@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import Navbar from './assets/components/Navbar.tsx'
-import ProfilePage from './assets/components/ProfilePage.tsx'
-import LinkGroup from './assets/components/LinkGroup.tsx'
-import Footer from './assets/components/Footer.tsx'
+import Navbar from './webpages/peo/components/Navbar.tsx'
+import MainPage from './webpages/peo/subpages/MainPage.tsx'
+import ProfilePage from './webpages/peo/subpages/ProfilePage.tsx'
+import LinkGroup from './webpages/peo/components/LinkGroup.tsx'
+import Footer from './webpages/peo/components/Footer.tsx'
 import './assets/fonts.css'
 import './App.css'
 
@@ -13,20 +13,22 @@ function App() {
       <div className='main-nav'>
         <Navbar />
       </div>
-      <div className='main-content'>
-        {
-          //<MainPage />
-          <ProfilePage />
-          //<ContactPage />
-          //<SheetPage />
-          //<ToSPage />
-        }
-      </div>
-      <div className='main-links'>
-        <LinkGroup />
-      </div>
-      <div className='main-footer'>
-        <Footer />
+      <div id='wrapper'>
+        <div className='main-content'>
+          {
+            <MainPage />
+            //<ProfilePage />
+            //<ContactPage />
+            //<SheetPage />
+            //<ToSPage />
+          }
+        </div>
+        <div className='main-links'>
+          <LinkGroup />
+        </div>
+        <div className='main-footer'>
+          <Footer />
+        </div>
       </div>
     </>
   )

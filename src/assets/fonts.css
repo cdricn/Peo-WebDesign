@@ -5,33 +5,31 @@
 }
 
 @font-face{
-    font-family: "CocogooseLight";
-    src:local("Cocogoose-Pro-Semilight-trial"),
-    url('./fonts/Cocogoose/Cocogoose-Pro-Semilight-trial.ttf') 
-}
-
-@font-face{
-    font-family: "CocogooseUltraLight";
-    src:local("Cocogoose-Pro-Ultralight-trial"),
-    url('./fonts/Cocogoose/Cocogoose-Pro-Ultralight-trial.ttf') 
-}
-
-@font-face{
-    font-family: "LemonMilk";
-    src:local("LEMONMILK-Regular"),
-    url('./fonts/Lemonmilk/LEMONMILK-Regular.otf') 
-}
-
-@font-face{
-    font-family: "LemonMilkMedium";
-    src:local("LEMONMILK-Medium"),
-    url('./fonts/Lemonmilk/LEMONMILK-Medium.otf') 
-}
-
-@font-face{
     font-family: "InterBold";
     src:local("Inter-Bold"),
     url('./fonts/Inter/Inter-Bold.ttf') 
 }
 
+@font-face{
+    font-family: "VisbyRoundRegular";
+    src:local("VisbyRoundCF-Regular"),
+    url('./fonts/VisbyRound/VisbyRoundCF-Regular.otf')
+}
 
+@font-face{
+    font-family: "VisbyRoundHeavy";
+    src:local("VisbyRoundCF-Heavy"),
+    url('./fonts/VisbyRound/VisbyRoundCF-Heavy.otf')
+}
+
+@font-face{
+    font-family: "VisbyRoundBold";
+    src:local("VisbyRoundCF-Bold"),
+    url('./fonts/VisbyRound/VisbyRoundCF-Bold.otf')
+}
+
+@font-face{
+    font-family: "VisbyRoundExtraBold";
+    src:local("VisbyRoundCF-ExtraBold"),
+    url('./fonts/VisbyRound/VisbyRoundCF-ExtraBold.otf')
+}

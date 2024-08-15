@@ -1,10 +1,10 @@
 import './LinkGroup.css'
-import youtubeIcon from '../icons/ytIcon.png'
-import twitterIcon from '../icons/twtIcon.png'
-import twitchIcon from '../icons/twitchIcon.png'
-import fanclubIcon from '../icons/fancIcon.png'
-import kofiIcon from '../icons/kofiIcon.png'
-import discordIcon from '../icons/dsIcon.png'
+import youtubeIcon from '../images/icons/ytIcon.png'
+import twitterIcon from '../images/icons/twtIcon.png'
+import twitchIcon from '../images/icons/twitchIcon.png'
+import fanclubIcon from '../images/icons/fancIcon.png'
+import kofiIcon from '../images/icons/kofiIcon.png'
+import discordIcon from '../images/icons/dsIcon.png'
 
 function LinkGroup() {
   return (

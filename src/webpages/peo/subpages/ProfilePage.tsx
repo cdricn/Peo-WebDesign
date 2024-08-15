@@ -7,8 +7,8 @@ function ProfilePage() {
       <div className='page-title'>
         <h1>PROFILE</h1>
       </div>
-      <div className='profile-content'>
-        <div className='profile-description'>
+      <div className='page-content'>
+        <div className='page-description'>
           <div className='description-title'>
             <h2>Yukinoshita Peo</h2>
           </div>
@@ -44,10 +44,10 @@ function ProfilePage() {
           <div className='description-buttons'>
             <div className='buttons'>Lore</div>
             <div className='buttons'>Reference Sheet</div>
-            <div className='buttons'>Terms of Service</div>
+            <div className='buttons'>Terms of Use</div>
           </div>
         </div>
-        <div className='profile-image'>
+        <div className='page-image'>
           <img src={image} className='image'>
           </img>
         </div>
