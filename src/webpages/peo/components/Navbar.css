@@ -1,17 +1,36 @@
-.navbar {
-  position: inline;
+.peo-navbar {
+  position: fixed;
   width: 100%;
   background-color: white;
   box-shadow: 0 2px #E4E4E4;
+  z-index: 10;
 }
 
-.navbar-items {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.peo-navbar-items {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 7%;
-  font-family: 'InterBold';
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+}
+
+.peo-navbar-item {
+  padding: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  text-decoration: none;
+  transition: .3s;
+}
+.peo-navbar-title{
+  color: #fda1b7;
+}
+.peo-navbar-item:hover {
+  background-color: #FFE7ED;
+  transition: .3s;
+}
+.peo-navbar-item:hover .peo-navbar-title{
+  color: #fa7b99;
+}
+
+.deco-none {
+  text-decoration: none;
 }

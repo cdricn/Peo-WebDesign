@@ -2,46 +2,49 @@ p {
   color: #532C35;
 }
 
-.page-title {
-  padding-top: 2rem;
+.profile-header {
+  margin-top: 5rem;
+  font-size: 5rem;
   text-align: center;
-  font-size: 4.5rem;
 }
 
-.page-content {
-  margin-left: 15vh;
+.profile-content {
+  margin-top: 2rem;
+  margin-left: 10rem;
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.page-description {
-  margin-top: 8rem;
+.profile-description {
+  margin-top: 6rem;
   width: 22rem;
 }
-.description-title {
+.profile-description-title {
+  margin-top: 2rem;
   font-size: 2.4rem;
 }
-.description-short {
+.profile-description-short {
   display: flex;
   flex-direction: row;
   gap: .5rem;
 }
-.description-long {
+.profile-description-long {
   margin-top: 2rem;
   margin-bottom: 1rem;
   text-align: left;
 }
-.description-short, .description-long {
+.profile-description-short, .profile-description-long {
   margin-left: .4rem;
 }
-.description-buttons {
+.profile-description-buttons {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.buttons {
+.profile-buttons {
   padding: .5rem;
   border-radius: 3rem;
   width: 80%;
@@ -51,17 +54,13 @@ p {
   background-color: #FCBAC9;
 }
 
-.image {
+.profile-image {
   object-fit: contain;
   height: 54rem;
   width: 42rem;
 }
 
-.divider {
+.profile-divider {
   border: 1px solid #FCBAC9;
   width: 100%;
-}
-
-.highlight-pink {
-  color: #F891A9;
 }

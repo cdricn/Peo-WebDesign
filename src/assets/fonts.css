@@ -33,3 +33,21 @@
     src:local("VisbyRoundCF-ExtraBold"),
     url('./fonts/VisbyRound/VisbyRoundCF-ExtraBold.otf')
 }
+
+@font-face{
+    font-family: "AntiPasto-Bold";
+    src:local("AntipastoPro-Bold"),
+    url('./fonts/AntiPasto/AntipastoPro-Bold.ttf')
+}
+
+@font-face{
+    font-family: "AntiPasto-DemiBold";
+    src:local("AntipastoPro-DemiBold"),
+    url('./fonts/AntiPasto/AntipastoPro-DemiBold.ttf')
+}
+
+@font-face{
+    font-family: "AntiPasto-Medium";
+    src:local("AntipastoPro-Medium"),
+    url('./fonts/AntiPasto/AntipastoPro-Medium.ttf')
+}

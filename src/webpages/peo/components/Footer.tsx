@@ -3,7 +3,7 @@ import './Footer.css'
 function Footer() {
   return (
     <>
-      <div className='footer'>
+      <div className='peo-footer'>
         <span>@20XX YOUR COPYRIGHT</span>
       </div>
     </>

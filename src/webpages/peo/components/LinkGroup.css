@@ -1,19 +1,20 @@
-.item {
+.link-item {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 4.75rem;
+  width: 4rem;
 }
 
 .link-items {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 1%;
+  gap: 4rem;
+
+  font-size: 1rem;
 }
 
-.item-icon {
-  height: 3rem;
-  width: 3rem;
+.link-item-icon {
 }

@@ -1,14 +1,35 @@
-h1 {
-  font-family: "VisbyRoundHeavy";
+
+.color-C {
+  color: #F891A9;
 }
-h2, p, ul {
-  font-family: "VisbyRoundBold";
+.color-D {
+  color: #F2708E;
 }
-ul {
-  font-family: "VisbyRoundHeavy";
+.color-E {
+  color: #E85174;
 }
 
-#wrapper {
+.font-coco {
+  font-family: 'Cocogoose';
+}
+.font-visbyH {
+  font-family: "VisbyRoundHeavy";
+}
+.font-visbyB {
+  font-family: "VisbyRoundBold";
+}
+.font-antipastoB {
+  font-family: 'AntiPasto-Bold';
+}
+.font-antipastoDB {
+  font-family: 'AntiPasto-DemiBold';
+}
+.font-antipastoM {
+  font-family: 'AntiPasto-Medium';
+}
+
+
+#peo-main-wrapper {
   min-height: 100vh;
   position: relative;
   display: flex;
@@ -22,13 +43,14 @@ ul {
   min-height: 100%;
 }
 
-.main-links {
-  margin-top: 4rem;
-  margin-bottom: 5rem;
-  flex-grow: 1;
+.peo-main-content {
+  flex-grow: 3;
 }
 
-.main-footer {
+.peo-main-links {
+}
+
+.peo-main-footer {
   justify-self: flex-end;
 }
 
