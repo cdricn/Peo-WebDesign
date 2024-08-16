@@ -1,0 +1,20 @@
+.contact_header {
+  margin-top: 5rem;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.contact_body {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+}
+.contact_body_part {
+  
+}
+
+.contact_forms {
+
+}
+

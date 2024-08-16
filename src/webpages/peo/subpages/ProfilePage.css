@@ -22,8 +22,8 @@ p {
   width: 22rem;
 }
 .profile-description-title {
-  margin-top: 2rem;
-  font-size: 2.4rem;
+  margin-top: 1rem;
+  font-size: 2.6rem;
 }
 .profile-description-short {
   display: flex;
@@ -52,6 +52,11 @@ p {
   text-align: center;
   color: white;
   background-color: #FCBAC9;
+  transition: .3s;
+}
+.profile-buttons:hover {
+  background-color: #F2708E;
+  transition: .3s;
 }
 
 .profile-image {

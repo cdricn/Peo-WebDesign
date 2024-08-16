@@ -6,7 +6,7 @@ function ProfilePage() {
   return (
     <>
       <div className='profile-header'>
-        <h1 className='font-visbyB color-C'>PROFILE</h1>
+        <h1 className='font-visbyH color-D'>PROFILE</h1>
       </div>
       <div className='profile-content'>
         <div className='profile-description'>
