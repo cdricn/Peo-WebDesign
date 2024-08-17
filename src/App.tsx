@@ -1,6 +1,7 @@
 import MainPage from './webpages/peo/subpages/MainPage.tsx'
 import ProfilePage from './webpages/peo/subpages/ProfilePage.tsx'
 import ContactPage from './webpages/peo/subpages/ContactPage.tsx'
+import SheetPage from './webpages/peo/subpages/SheetPage.tsx'
 import Footer from './webpages/peo/components/Footer.tsx'
 import Layout from './webpages/peo/peoLayout.tsx'
 import './assets/fonts.css'
@@ -20,6 +21,7 @@ function App() {
                 <Route path='/' element={<MainPage/>}/>
                 <Route path='/profilepage' element={<ProfilePage/>}/>
                 <Route path='/contactpage' element={<ContactPage/>}/>
+                <Route path='/sheetpage' element={<SheetPage/>}/>
               </Route>
             </Routes>
           </Router>

@@ -8,8 +8,8 @@ function MainPage() {
     <div className='landing-main bg-light'>
       <div className='landing-main-title'>
         <div className='landing-main-header font-antipastoB'>
-          <h1>PEO</h1>
-          <h1>YUKINOSHITA</h1>
+          <h1>PEO <br/>
+          YUKINOSHITA</h1>
         </div>
         <div className='peo-link-group'>
           <LinkGroup />

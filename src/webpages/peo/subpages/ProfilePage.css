@@ -1,16 +1,24 @@
+:root {
+  --fs-xl: 5rem;
+  --fs-h1: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.5rem;
+  --fs-400: 1rem;
+}
+
 p {
   color: #532C35;
 }
 
 .profile-header {
   margin-top: 5rem;
-  font-size: 5rem;
+  font-size: var(--fs-xl);
   text-align: center;
 }
 
 .profile-content {
   margin-top: 2rem;
-  margin-left: 10rem;
+  margin-left: 13rem;
   margin-bottom: 3rem;
   display: flex;
   flex-direction: row;
@@ -18,34 +26,34 @@ p {
 }
 
 .profile-description {
-  margin-top: 6rem;
-  width: 22rem;
+  margin-top: 10rem;
+  width: 30rem;
 }
 .profile-description-title {
-  margin-top: 1rem;
-  font-size: 2.6rem;
+  font-size: var(--fs-h1);
 }
 .profile-description-short {
   display: flex;
   flex-direction: row;
   gap: .5rem;
 }
-.profile-description-long {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  text-align: left;
-}
 .profile-description-short, .profile-description-long {
   margin-left: .4rem;
+  margin-bottom: 1.5rem;
 }
+
+.profile-divider {
+  border: 1px solid #FCBAC9;
+  width: 100%;
+}
+
 .profile-description-buttons {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 .profile-buttons {
-  padding: .5rem;
   border-radius: 3rem;
   width: 80%;
   align-self: center;
@@ -54,18 +62,31 @@ p {
   background-color: #FCBAC9;
   transition: .3s;
 }
+.pad {
+  padding: .5rem;
+}
 .profile-buttons:hover {
   background-color: #F2708E;
   transition: .3s;
 }
 
-.profile-image {
-  object-fit: contain;
-  height: 54rem;
-  width: 42rem;
+.button-text {
+  color: white;
+  text-decoration: none;
 }
 
-.profile-divider {
-  border: 1px solid #FCBAC9;
-  width: 100%;
+.profile-image {
+  object-fit: contain;
+  height: 64rem;
+  width: 52rem;
+}
+
+@media (width < 1400px) {
+  :root {
+    --fs-xl: 5rem;
+    --fs-h1: 3rem;
+    --fs-600: 2rem;
+    --fs-500: 1.5rem;
+    --fs-400: 1rem;
+  }
 }

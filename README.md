@@ -1,8 +1,8 @@
-# Mock pages
-Template designs for webpages focused on user responsiveness and UI/UX. 
+# Webpage Design Portfolio
+A collection of webpage re/designs. Made using Vite + React.
 
 TODO: 
-Each template can be viewed by clicking it from the hub page. To go back to the hub page, just refresh the page.
+-Make a hub page containing all the designs.
 
 ## Current templates
-- Redesign of an profile website
+- Redesign of a vtuber profile website.

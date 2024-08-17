@@ -1,4 +1,4 @@
-.peo-navbar {
+.navbar {
   position: fixed;
   width: 100%;
   background-color: white;
@@ -6,31 +6,31 @@
   z-index: 10;
 }
 
-.peo-navbar-items {
+.items_container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 1.6rem;
 }
 
-.peo-navbar-item {
+.item {
   padding: 1rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  text-decoration: none;
+  font-family: 'AntiPasto-Bold';
   transition: .3s;
 }
-.peo-navbar-title{
-  color: #fda1b7;
+.item_title{
+  color: #F891A9;
 }
-.peo-navbar-item:hover {
+.item_link {
+  text-decoration: none;
+}
+.item:hover {
   background-color: #FFE7ED;
   transition: .3s;
 }
-.peo-navbar-item:hover .peo-navbar-title{
-  color: #fa7b99;
-}
-
-.deco-none {
-  text-decoration: none;
+.item:hover .item_title{
+  color: #F2708E;
+  transition: .3s;
 }

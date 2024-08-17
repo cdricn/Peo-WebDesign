@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>
       <div className='peo-footer'>
-        <span>@20XX YOUR COPYRIGHT</span>
+        <span>@20XX HER COPYRIGHT TEXT</span>
       </div>
     </>
   );
