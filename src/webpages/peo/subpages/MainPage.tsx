@@ -1,31 +1,46 @@
-import './MainPage.css'
+import style from './MainPage.module.css'
+import EventItem from '../components/EventItem.tsx';
 import LinkGroup from '../components/LinkGroup.tsx'
-import cover from '../images/image3.jpg'
 
 function MainPage() {
   return (
     <>
-    <div className='landing-main bg-light'>
-      <div className='landing-main-title'>
-        <div className='landing-main-header font-antipastoB'>
-          <h1>PEO <br/>
-          YUKINOSHITA</h1>
-        </div>
-        <div className='peo-link-group'>
-          <LinkGroup />
+      <div className={style.body_wrapper}>
+        <div className={style.body_main}>
+          <div className={style.main_container}>
+            <div className={style.main_items}>
+              <div className={style.title_container}>
+                <h1 className={style.title}>
+                  PEO <br/> YUKINOSHITA
+                </h1>
+              </div>
+              <div className={style.linkgroup_container}>
+                <LinkGroup />
+              </div>
+            </div>
+          </div>
+          <div className={style.main_small_bar}>
+          </div>
+          <div className={style.main_medium_bar}>
+          </div>
+          <div className={style.main_large_bar}>
+          </div>
         </div>
       </div>
-      <div className='landing-main-gallery'>
-        <div className='flex-blur'>
-          <div className='blur'>
+      <div className={style.body_content}>
+        <div className={style.event_container}>
+          <div className={style.event_header}><h1>Upcoming Events</h1></div>
+          <div className={style.event_items}>
+            <EventItem />
           </div>
-          <div className='blur2'>
-          </div>
-          <div className='blur3'>
+        </div>
+        <div className={style.event_container}>
+          <div className={style.event_header}><h1>Recent Activities</h1></div>
+          <div className={style.event_items}>
+            <EventItem />
           </div>
         </div>
       </div>
-    </div>
     </>
   );
 }

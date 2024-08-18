@@ -14,6 +14,23 @@
   -moz-osx-font-smoothing: grayscale;
   
   min-height: 100%;
+  
+  --color-a: #FFE7EC;
+  --color-b: #FCBAC9;
+  --color-c: #F891A9;
+  --color-d: #F2708E;
+  --color-e: #E85174;
+
+  --ff-peo-title: 'AntiPasto-Bold';
+  --ff-peo-h1: 'VisbyRoundHeavy';
+  --ff-peo-body: 'VisbyRoundBold';
+  
+  --fs-xl: 8rem;
+  --fs-h1: 5rem; 
+  --fs-h2: 3.5rem;
+  --fs-h3: 2rem;
+  --fs-h4: 1.5rem;
+  --fs-body: 1rem;
 }
 
 *, *::before, *::after {
