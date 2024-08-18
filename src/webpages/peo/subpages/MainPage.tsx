@@ -28,15 +28,25 @@ function MainPage() {
         </div>
       </div>
       <div className={style.body_content}>
+        <div className={style.divider}></div>
         <div className={style.event_container}>
           <div className={style.event_header}><h1>Upcoming Events</h1></div>
           <div className={style.event_items}>
+            <EventItem />
+            <EventItem />
+            <EventItem />
+            <EventItem />
+            <EventItem />
             <EventItem />
           </div>
         </div>
         <div className={style.event_container}>
           <div className={style.event_header}><h1>Recent Activities</h1></div>
           <div className={style.event_items}>
+            <EventItem />
+            <EventItem />
+            <EventItem />
+            <EventItem />
             <EventItem />
           </div>
         </div>

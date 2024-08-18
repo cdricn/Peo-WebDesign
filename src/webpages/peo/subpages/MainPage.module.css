@@ -65,11 +65,23 @@
 }
 
 .body_content {
-  padding-top: 1em;
-  box-shadow: inset 0px 3px #FFE7EC;
+  background-color: rgb(253, 249, 249);
 }
+.divider {
+  padding: 5px;
+  background-color: var(--color-b);
+}
+
 .event_container {
+  margin: auto;
+  margin-top: 1rem;
   padding: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  max-width: 150rem;
+
+  box-shadow: 0px 0px 2px #E4E4E4;
+  background-color: white;
 }
 .event_header {
   padding-bottom: 1rem;
@@ -78,12 +90,21 @@
   font-size: var(--fs-h2);
 }
 .event_items {
+  padding: .5rem;
   display: flex;
-  gap: 1rem;
+  flex-wrap: nowrap;
+  overflow: auto;
+  gap: 1.5rem;
+
+  
+  scrollbar-color: var(--color-d) var(--color-a);
 }
 
-
-
+@media (width > 2500px) {
+  .event_items {
+    scrollbar-width: thin;
+  }
+}
 
 
 
