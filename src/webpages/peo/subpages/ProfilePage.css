@@ -3,7 +3,6 @@ p {
 }
 
 .profile-header {
-  margin-top: 5rem;
   font-size: var(--fs-xl);
   text-align: center;
 }

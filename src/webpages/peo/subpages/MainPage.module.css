@@ -4,6 +4,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  --switch-wTime: .4s;
+  --switch-wTimeDelay1: .5s;
+  --switch-wTimeDelay2: .6s;
+  --switch-hTime: .1s;
+  --switch-hTimeDelay1: .2s;
+  --switch-hTimeDelay2: .3s;
 }
 
 .body_main {
@@ -26,42 +33,49 @@
 
   width: 42%;
   min-width: min-content;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 1);
+}
 
-  transition: .2s;
-}
 .main_items {
-  margin-bottom: 2rem;
-  margin-right: 1.5rem;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
 }
+
+.title_container {
+  line-height: normal;
+  padding-bottom: .5rem;
+}
+.title{
+  margin-left: auto;
+  margin-right: 1rem;
+  max-width: 705px;
+  font-family: var(--ff-peo-title);
+  font-size: var(--fs-xl);
+  color: #f76c8d;
+}
+.linkgroup_container {
+  width: 100%;
+}
+
 .main_small_bar {
-  width: 1rem;
+  transition: var(--switch-hTime);
+  width: 1vw;
   opacity: 80%;
   background-color: white;
 }
 .main_medium_bar {
-  width: 2rem;
+  transition: var(--switch-hTimeDelay1);
+  width: 2vw;
   opacity: 50%;
   background-color: white;
 }
 .main_large_bar {
-  width: 3rem;
+  transition: var(--switch-hTimeDelay2);
+  width: 3vw;
   opacity: 20%;
   background-color: white;
-}
-
-.title{
-  line-height: 7rem;
-  color: #f76c8d;
-}
-
-.title_container {
-  font-family: var(--ff-peo-title);
-  font-size: var(--fs-xl);
-}
-
-.linkgroup_container {
-  font-size: var(--fs-body);
 }
 
 .body_content {
@@ -74,8 +88,8 @@
 
 .event_container {
   margin: auto;
-  margin-top: 1rem;
-  padding: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
   padding-left: 3rem;
   padding-right: 3rem;
   max-width: 150rem;
@@ -95,8 +109,6 @@
   flex-wrap: nowrap;
   overflow: auto;
   gap: 1.5rem;
-
-  
   scrollbar-color: var(--color-d) var(--color-a);
 }
 
@@ -106,15 +118,40 @@
   }
 }
 
+@media (width < 1500px) {
+  .body_main {
+    justify-content: end;
+    flex-direction: column-reverse;
+    background-position: 55% 100%;
+  }
+  .main_container { 
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .title {
+    margin: auto;
+  }
 
+  .event_container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 
-
-
-
-
-@media (width < 1000px) {
-  .main-container { 
-    transition: .2s;
-    background-color: rgba(255, 255, 255, 0.8)
+  .main_small_bar {
+    transition: var(--switch-wTime);
+    height: .5vh;
+    width: 100%;
+  }
+  .main_medium_bar {
+    transition: var(--switch-wTimeDelay1);
+    height: 1vh;
+    width: 100%;
+  }
+  .main_large_bar {
+    transition: var(--switch-wTimeDelay2);
+    height: 2vh;
+    width: 100%;
   }
 }
+
+/*765*/

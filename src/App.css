@@ -10,9 +10,9 @@
   --ff-peo-h1: 'VisbyRoundHeavy';
   --ff-peo-body: 'VisbyRoundBold';
   
-  --fs-xl: 8rem;
+  --fs-xl: clamp(4rem, 12vw + 1rem, 8rem);
   --fs-h1: 5rem; 
-  --fs-h2: 3.5rem;
+  --fs-h2: clamp(2rem, 5vw + .1rem, 3.5rem);
   --fs-h3: 2rem;
   --fs-h4: 1.5rem;
   --fs-body: 1rem;
