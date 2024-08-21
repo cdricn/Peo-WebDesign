@@ -12,14 +12,17 @@ function EventItem() {
         </div>
         <div className={styles.item_text_container}>
           <div className={styles.item_header}>
-            Event Header
+            Very Long Event Header Super Charity Stream Long
           </div>
-          <div className={styles.item_description}>
+          {
+          // Description div if you decide to add it back
+          /* <div className={styles.item_description}>
             Some description that should be passed as props instead of
             being hardcoded in this component. Same with header and the image.
             Maybe add a cut off somehow for the text because height should be
             a fixed size.
-          </div>
+          </div> */
+          }
           <div className={styles.item_button_container}>
             <Link to={'/'} className={styles.item_link}>
               <div className={styles.item_button}>

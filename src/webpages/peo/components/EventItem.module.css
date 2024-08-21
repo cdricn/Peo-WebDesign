@@ -1,6 +1,6 @@
 .item_container {
   flex-shrink: 0;
-  width: 25rem;
+  width: clamp(18rem, 50%, 25rem);
   box-shadow: 0px 0px 4px #E4E4E4;
   background-color: white;
 }
@@ -15,11 +15,26 @@
 }
 
 .item_header {
+  display: -webkit-box;
+  height: 87px;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+  line-height: normal;
   font-size: var(--fs-h4);
 }
+/*
 .item_description {
   color: var(--color-f);
-}
+  background-color: lightblue;
+  min-height: 192px;
+  
+  overflow: scroll;
+  white-space: wrap;
+  text-overflow: ellipsis;
+} */
 
 .item_button_container {
   margin-top: 1rem;

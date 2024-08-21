@@ -3,6 +3,8 @@ import EventItem from '../components/EventItem.tsx';
 import LinkGroup from '../components/LinkGroup.tsx'
 
 function MainPage() {
+  const listEventItems = Array.apply(null, Array(5)).map(() => <EventItem />)
+
   return (
     <>
       <div className={style.body_wrapper}>
@@ -32,22 +34,13 @@ function MainPage() {
         <div className={style.event_container}>
           <div className={style.event_header}><h1>Upcoming Events</h1></div>
           <div className={style.event_items}>
-            <EventItem />
-            <EventItem />
-            <EventItem />
-            <EventItem />
-            <EventItem />
-            <EventItem />
+            {listEventItems}
           </div>
         </div>
         <div className={style.event_container}>
           <div className={style.event_header}><h1>Recent Activities</h1></div>
           <div className={style.event_items}>
-            <EventItem />
-            <EventItem />
-            <EventItem />
-            <EventItem />
-            <EventItem />
+            {listEventItems}
           </div>
         </div>
       </div>
