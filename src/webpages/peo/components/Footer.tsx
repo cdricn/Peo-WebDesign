@@ -1,10 +1,13 @@
-import './Footer.css'
+import style from './Footer.module.css'
 
 function Footer() {
   return (
     <>
-      <div className='peo-footer'>
-        <span>@20XX HER COPYRIGHT TEXT</span>
+      <div className={style.footer}>
+        <div className={style.footer_bar}></div>
+        <div className={style.footer_text}>
+          <span>@20XX SOME COPYRIGHT TEXT</span>
+        </div>
       </div>
     </>
   );

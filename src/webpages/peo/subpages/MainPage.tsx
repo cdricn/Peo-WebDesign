@@ -1,6 +1,7 @@
-import style from './MainPage.module.css'
+import style from './MainPage.module.css';
 import EventItem from '../components/EventItem.tsx';
-import LinkGroup from '../components/LinkGroup.tsx'
+import LinkGroup from '../components/LinkGroup.tsx';
+import Footer from '../components/Footer.tsx';
 
 function MainPage() {
   const listEventItems = Array.apply(null, Array(5)).map(() => <EventItem />)

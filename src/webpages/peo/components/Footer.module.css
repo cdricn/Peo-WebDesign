@@ -1,0 +1,19 @@
+.footer {
+  background-color: #ffdae2;
+}
+
+.footer_bar {
+  padding: .3rem;
+  width: 100%;
+  background-color: var(--color-b);
+}
+
+.footer_text {
+  padding-top: 2rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  
+  text-align: right;
+  color: var(--color-c);
+  font-size: clamp(10px, calc(0.625rem + ((1vw - 7.68px) * 0.5208)), 16px);
+}

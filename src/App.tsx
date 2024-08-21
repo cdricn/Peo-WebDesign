@@ -3,6 +3,7 @@ import ProfilePage from './webpages/peo/subpages/ProfilePage.tsx'
 import ContactPage from './webpages/peo/subpages/ContactPage.tsx'
 import SheetPage from './webpages/peo/subpages/SheetPage.tsx'
 import Layout from './webpages/peo/peoLayout.tsx'
+import Footer from './webpages/peo/components/Footer.tsx'
 import './assets/fonts.css'
 import './App.css'
 
@@ -24,6 +25,9 @@ function App() {
               </Route>
             </Routes>
           </Router>
+        </div>
+        <div className='peo-main-footer'>
+          <Footer />
         </div>
       </div>
     </>
