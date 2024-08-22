@@ -1,28 +1,36 @@
-:root {
-  --fs-xl: 5rem;
-  --fs-600: 2rem;
-  --fs-500: 1.5rem;
-  --fs-400: 1rem;
-}
-
 .contact_header {
-  margin-top: 5rem;
-  font-size: var(--fs-xl);
+  padding-top: 5rem;
   text-align: center;
+  line-height: normal;
+  color: var(--color-d);
+  font-size: var(--fs-xl);
+  font-family: var(--ff-peo-h1);
 }
 
-.part_container {
-  margin: auto;
-  width: 50rem;
-}
-.description_part {
-  margin-bottom: 1rem;
-}
-.description_title {
-  font-size: var(--fs-500);
-  font-family: 'VisbyRoundBold';
+.contact_wrapper {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.content_container {
+  width: min(1000px, 85%); /*260 1000*/
+  max-width: 1000px;
+}
 
+.content {
+  padding-top: 1rem;
+  font-family: var(--ff-peo-body);
+}
+.content_title {
+  padding-bottom: .5rem;
+  font-size: var(--fs-h3);
+}
+.content_text {
+  color: var(--color-body);
+  font-size: var(--fs-body);
+}
 
 

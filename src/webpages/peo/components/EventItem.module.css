@@ -23,7 +23,7 @@
 
   overflow: hidden;
   line-height: normal;
-  font-size: clamp(1.2rem, calc(1.2rem + ((1vw - 7.68px) * 0.4167)), 1.5rem);
+  font-size: var(--fs-h3);
 }
 /*
 .item_description {

@@ -8,10 +8,10 @@ function ProfilePage() {
       <div className={style.profile_header}>
         <h1>PROFILE</h1>
       </div>
-      <div className={style.profile_content_wrapper}>
-        <div className={style.profile_content}>
-          <div className={style.profile_content_container}>
-            <div className={style.content_title}>
+      <div className={style.profile_wrapper}>
+        <div className={style.main}>
+          <div className={style.main_container}>
+            <div className={style.main_title}>
               <h2>Yukinoshita Peo</h2>
             </div>
             <div className={style.subtext_container}>
@@ -32,7 +32,7 @@ function ProfilePage() {
                 </p>
               </div>
             </div>
-            <div className={style.content_description}>
+            <div className={style.main_description}>
               <p>
                 Peo is a flower fairy living in Fairyland, above the
                 sky in Japan! <br/> 
@@ -41,27 +41,35 @@ function ProfilePage() {
                 She is studying English hard to chat with everyone.
               </p>
             </div>
-            <div className={style.content_divider}>
+            <div className={style.main_divider}>
             </div>
-            <div className={style.content_buttons}>
-              <div className={style.content_button}>
+            <div className={style.main_buttons}>
+              <div className={style.main_button}>
               <div className={style.button_padding}>Lore</div>
               </div>
-              <div className={style.content_button}>
+              <div className={style.main_button}>
                 <Link to='/sheetpage' className={style.button_text}>
                   <div className={style.button_padding}>Reference Sheet</div>
                 </Link>
               </div>
-              <div className={style.content_button}>
+              <div className={style.main_button}>
                 <div className={style.button_padding}>Terms of Use</div>
               </div>
             </div>
           </div>
-          <div className={style.profile_image_container}>
-            <img src={image} className={style.profile_image}>
+          <div className={style.main_image_container}>
+            <img src={image} className={style.main_image}>
             </img>
           </div>
         </div>
+        {/*<div className={style.gallery}>
+          <div className={style.gallery_title}>
+            <h2>Gallery</h2>
+          </div>
+          <div className={style.gallery_images}>
+            Images for gallery
+          </div>
+        </div>*/}
       </div>
     </>
   );

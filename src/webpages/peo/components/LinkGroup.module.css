@@ -25,8 +25,8 @@
   align-items: center;
   justify-content: center;
 
-  height: clamp(50px, 12vw - 50px, 60px);
-  width: clamp(50px, 12vw - 50px, 60px);
+  height: clamp(40px, 12vw - 50px, 60px);
+  width: clamp(40px, 12vw - 50px, 60px);
   background-color: #F891A9;
 }
 .link_item_icon {
@@ -56,12 +56,7 @@
   }
 }
 @media (width <= 560px) {
-  .link_item_icon {
-    transition: .3s;
-    padding: .6rem;
-  }
   .link_item_title {
-    transition: .1s;
     font-size: 1px;
     visibility: hidden;
   }

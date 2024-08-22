@@ -83,11 +83,12 @@
 }
 
 .body_content {
-  background-color: rgb(253, 247, 247);
+  padding-bottom: 3rem;
+  background-color: var(--color-pagebg);
 }
 .divider {
   padding: 5px;
-  background-color: var(--color-b);
+  background-color: var(--color-c);
 }
 
 .event_container {
@@ -112,7 +113,7 @@
   display: flex;
   flex-wrap: nowrap;
   overflow: auto;
-  gap: 1.5rem;
+  gap: clamp(12.8px, calc(0.8rem + ((1vw - 7.68px) * 0.9722)), 24px);
   scrollbar-color: var(--color-d) var(--color-a);
 }
 
@@ -130,6 +131,8 @@
   }
   .main_container { 
     width: 100%;
+    background: rgb(255,231,236);
+    background: linear-gradient(0deg, rgba(255,231,236,1) 0%, rgba(255,255,255,1) 50%)
   }
   .main_items {
     padding: .5rem;
@@ -163,6 +166,3 @@
     width: 100%;
   }
 }
-
-
-/*765*/
