@@ -2,11 +2,6 @@
 Made usine Vite + React. Redesign of a vtuber's website to practice responsive ui/ux. <br/>
 This was made purely for practice and is not related to the official website. All rights to the images belong to the owners. Original website is https://www.yukinoshitapeo.com/.
 
-# How to Use
-1. Install Node.js
-2. Clone repo
-3. Run command ```npm run dev```
-
 # Preview
 Browser: <br/>
 Main Page 
