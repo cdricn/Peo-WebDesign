@@ -3,7 +3,7 @@
   text-align: center;
   line-height: normal;
   color: var(--color-d);
-  font-size: var(--fs-xl);
+  font-size: var(--fs-l);
   font-family: var(--ff-peo-h1);
 }
 
@@ -16,7 +16,7 @@
 }
 
 .content_container {
-  width: min(1000px, 85%); /*260 1000*/
+  width: clamp(300px, calc(18.75rem + ((1vw - 7.8px) * 43.8596)), 800px); /*260 1000*/
   max-width: 1000px;
 }
 

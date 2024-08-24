@@ -1,4 +1,4 @@
-import './SheetPage.css'
+import style from './SheetPage.module.css'
 
 function SheetPage() {
   return (

@@ -4,7 +4,7 @@ import LinkGroup from '../components/LinkGroup.tsx';
 import Footer from '../components/Footer.tsx';
 
 function MainPage() {
-  const listEventItems = Array.apply(null, Array(5)).map(() => <EventItem />)
+  const listEventItems = Array.apply(null, Array(10)).map(() => <EventItem />)
 
   return (
     <>

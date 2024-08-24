@@ -1,6 +1,6 @@
 .item_container {
   flex-shrink: 0;
-  width: clamp(18rem, 50%, 25rem);
+  width: clamp(240px, calc(15rem + ((1vw - 7.8px) * 7.0175)), 320px);
   box-shadow: 0px 0px 4px #E4E4E4;
   background-color: white;
 }

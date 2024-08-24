@@ -4,7 +4,7 @@
   text-align: center;
   line-height: normal;
   color: var(--color-d);
-  font-size: var(--fs-xl);
+  font-size: var(--fs-l);
   font-family: var(--ff-peo-h1);
 }
 
@@ -25,8 +25,8 @@
 }
 
 .main_container {
-  margin-top: 13rem;
-  width: clamp(320px, calc(20rem + ((1vw - 7.68px) * 18.9236)), 538px);
+  margin-top: 18rem;
+  width: clamp(320px, calc(20rem + ((1vw - 7.8px) * 15.7895)), 500px);
   font-family: var(--ff-peo-body);
 }
 
@@ -63,7 +63,7 @@
 }
 .main_button {
   border-radius: 3rem;
-  width: 80%;
+  width: max(256px, 70%);
   align-self: center;
   text-align: center;
   color: white;
