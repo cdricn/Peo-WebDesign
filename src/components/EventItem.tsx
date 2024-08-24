@@ -1,5 +1,5 @@
 import styles from './EventItem.module.css'
-import image from '../images/image4.jpg'
+import image from '../assets/images/image4.jpg'
 import { Link } from 'react-router-dom';
 
 function EventItem() {

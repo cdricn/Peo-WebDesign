@@ -46,6 +46,7 @@
 
   color: white;
   background-color: var(--color-c);
+  font-size: var(--fs-body);
   text-align: center;
   transition: .3s;
 }

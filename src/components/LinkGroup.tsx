@@ -1,10 +1,10 @@
 import style from './LinkGroup.module.css'
-import youtubeIcon from '../images/icons/ytIcon.png'
-import twitterIcon from '../images/icons/twtIcon.png'
-import twitchIcon from '../images/icons/twitchIcon.png'
-import fanclubIcon from '../images/icons/fancIcon.png'
-import kofiIcon from '../images/icons/kofiIcon.png'
-import discordIcon from '../images/icons/dsIcon.png'
+import youtubeIcon from '../assets/images/icons/ytIcon.png'
+import twitterIcon from '../assets/images/icons/twtIcon.png'
+import twitchIcon from '../assets/images/icons/twitchIcon.png'
+import fanclubIcon from '../assets/images/icons/fancIcon.png'
+import kofiIcon from '../assets/images/icons/kofiIcon.png'
+import discordIcon from '../assets/images/icons/dsIcon.png'
 
 function LinkGroup() {
   const ytlink = 'https://www.youtube.com/@YukinoshitaPeo';

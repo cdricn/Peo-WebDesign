@@ -1,7 +1,7 @@
-import Navbar from './components/Navbar';
+import Navbar from '../components/Navbar';
 import { Outlet } from 'react-router-dom';
 
-function peoLayout() {
+function Layout() {
   return (
     <>
       <Navbar />
@@ -12,4 +12,4 @@ function peoLayout() {
   );
 }
 
-export default peoLayout
+export default Layout

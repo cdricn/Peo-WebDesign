@@ -13,10 +13,15 @@
   --ff-peo-body: 'VisbyRoundBold';
   
   --fs-xl: clamp(54.4px, calc(3.4rem + ((1vw - 7.68px) * 6.3889)), 128px);
-  --fs-h1: clamp(49px, calc(3.0625rem + ((1vw - 7.68px) * 2.691)), 80px); 
-  --fs-h2: clamp(24px, calc(1.5rem + ((1vw - 7.68px) * 2.7778)), 56px);
+  --fs-l: clamp(54.4px, calc(3.4rem + ((1vw - 7.8px) * 4)), 100px);
+  --fs-h1: clamp(49px, calc(3.0625rem + ((1vw - 7.8px) * 1.8421)), 70px); 
+  --fs-h2: clamp(24px, calc(1.5rem + ((1vw - 7.8px) * 1.4035)), 40px);
   --fs-h3: clamp(18px, calc(1.125rem + ((1vw - 7.68px) * 0.5208)), 24px);
   --fs-body: clamp(14px, calc(0.875rem + ((1vw - 7.68px) * 0.1736)), 16px);
+}
+
+p {
+  font-size: var(--fs-body);
 }
 
 .peo-main-content {

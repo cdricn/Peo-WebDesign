@@ -1,5 +1,5 @@
 import style from './ProfilePage.module.css'
-import image from '../images/image2.png'
+import image from '../assets/images/image2.png'
 import { Link } from "react-router-dom"
 
 function ProfilePage() {
