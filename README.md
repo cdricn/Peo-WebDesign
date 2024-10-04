@@ -1,11 +1,8 @@
-# Peo Website Design
-Made usine Vite + React. Redesign of a vtuber's website to practice responsive ui/ux. <br/>
-This was made purely for practice and is not related to the official website. All rights to the images belong to the owners. Original website is https://www.yukinoshitapeo.com/.
+# Peo Webdesign
+Redesign of a vtuber's website to practice responsive ui/ux. Created using TypeScript in Vite + React.  <br/>
+Currently in wip to redesign most of the UI.
 
-# How to Use
-1. Install Node.js
-2. Clone repo
-3. Run command ```npm run dev```
+This was made purely for practice and is not related to the official website. All rights to the images belong to the owners. Original website is https://www.yukinoshitapeo.com/.
 
 # Preview
 Browser: <br/>
