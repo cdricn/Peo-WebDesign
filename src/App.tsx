@@ -11,20 +11,18 @@ function App() {
   return (
     <>
       <div id='main-wrapper'>
-        <div className='wrapper'>
-          <Router>
-            <Routes>
-              <Route element={<Layout />}>
-                <Route path='/' element={<ProfilePage />}/>
-                <Route path='profilepage' element={<ProfilePage />}/>
-              </Route>
-            </Routes>
-          </Router>
-        </div>
-        <div className='main-footer'>
-          {//<Footer />
-          }
-        </div>
+        <Router>
+          <Routes>
+            <Route element={<Layout />}>
+              <Route path='/' element={<MainPage />}/>
+              <Route path='profilepage' element={<ProfilePage/>}/>
+            </Route>
+          </Routes>
+        </Router>
+      </div>
+      <div className='main-footer'>
+        {//<Footer />
+        }
       </div>
     </>
   )
