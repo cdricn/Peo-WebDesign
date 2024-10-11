@@ -1,4 +1,5 @@
 import MainPage from './webpages/MainPage.tsx'
+import ProfilePage from './webpages/ProfilePage.tsx'
 import Layout from './webpages/Layout.tsx'
 import './assets/fonts.css'
 import './App.css'
@@ -10,12 +11,12 @@ function App() {
   return (
     <>
       <div id='main-wrapper'>
-        <div className='main-content'>
+        <div className='wrapper'>
           <Router>
             <Routes>
               <Route element={<Layout />}>
-                <Route path='/' element={<MainPage />}/>
-                {/*<Route path='/sheetpage' element={<SheetPage/>}/>*/}
+                <Route path='/' element={<ProfilePage />}/>
+                <Route path='profilepage' element={<ProfilePage />}/>
               </Route>
             </Routes>
           </Router>

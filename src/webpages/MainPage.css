@@ -1,3 +1,43 @@
-.navbar {
+/*border-radius must be same as height & width
+  width must be same as height
+  top -px must be half of border-radius
+  probably clamp it
+*/
+.page-image-container{
+  margin: auto;
+  border-radius: 1300px;
+  position: absolute;
+  top: -800px;
+  left: 0;
+  right: 0;
+  height: 1300px;
+  width: 1300px;
+  background-color: white;
+  background-image: url('../assets/images/image5.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0% 120%;
+  z-index: 0;
+}
 
+.page-content {
+  padding-top: 31rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.page-title {
+  position: relative;
+  line-height: 5rem;
+  font-size: 96px;
+  color: var(--color-secondary-a);
+  z-index: 1;
+}
+
+.page-links {
+  padding-top: 2rem;
 }

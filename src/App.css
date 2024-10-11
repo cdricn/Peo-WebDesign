@@ -1,16 +1,10 @@
 #main-wrapper {
-  --color-primary-a: #ffffff;
-  --color-primary-b: #FCBACB;
+  --color-primary-a: #FFDCE5;
+  --color-primary-b: #FFABC1;
+  --color-primary-c: #ffffff;
 
-  --color-a: #ffffff;
-  --color-b: #FFE7EC;
-  --color-c: #FCBACB;
-  --color-d: #F891A9;
-  --color-e: #F2708E;
-  --color-f: #E85174;
-  --color-g: #794853;
-  --color-body: #521b27;
-  --color-pagebg: #fdf7f7;
+  --color-secondary-a: #FF5B86;
+  --color-secondary-b: #532C35;
 
   --ff-title: 'AntiPasto-Bold';
   --ff-h1: 'VisbyRoundHeavy';
@@ -24,10 +18,22 @@
   --fs-body: clamp(14px, calc(0.875rem + ((1vw - 7.68px) * 0.1736)), 16px);
 }
 
-body {
-  background-color: rgb(228, 92, 92);
-}
-
 p {
   font-size: var(--fs-body);
+}
+
+.wrapper {
+  height: 100%;
+  background-color: var(--color-primary-a);
+}
+.wrapper::after {
+  content: "";
+  margin: auto;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: 4px;
+  background-color: var(--color-primary-c);
 }
