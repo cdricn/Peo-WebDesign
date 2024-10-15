@@ -1,0 +1,17 @@
+.activity-container::before {
+  content: 'ACTIVITY';
+  position: absolute;
+  top: 0;
+  left: 18rem;
+  color: var(--color-primary-c);
+  font-size: var(--fx-xxl);
+  z-index: 1;
+}
+.activity-container > h1 {
+  position: relative;
+  left: -12rem;
+  font-size: 5rem;
+  line-height: 4.5rem;
+  color: var(--color-secondary-a);
+  z-index: 2;
+}

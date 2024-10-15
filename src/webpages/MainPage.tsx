@@ -1,20 +1,20 @@
 import './MainPage.css'
 import LinkGroup from '../components/links/LinkGroup'
-import image from '../assets/images/image5.jpg'
 
 function MainPage() {
 
   return (
     <>
-    <div className='page-image-container'>
-    </div>
-    <div className='page-content'>
-      <div className='page-title'>
-        <h1>PEO<br/>
-          <span style={{paddingLeft: '3.5rem'}}>YUKINOSHITA</span>
-        </h1>
+    <div className='mainpage-image-container'>
+      <div className='mainpage-image'>
       </div>
-      <div className='page-links'>
+    </div>
+    <div className='mainpage-content'>
+      <div className='mainpage-title'>
+        <h1>PEO</h1>
+        <h1>YUKINOSHITA</h1>
+      </div>
+      <div className='mainpage-links'>
         <LinkGroup />
       </div>
     </div>

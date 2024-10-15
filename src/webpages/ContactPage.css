@@ -1,0 +1,71 @@
+
+.contactinfo-container::before {
+  content: 'CONTACT';
+  position: absolute;
+  top: 0;
+  left: 18rem;
+  color: var(--color-primary-c);
+  font-size: var(--fx-xxl);
+  z-index: 1;
+}
+
+.contactdetails-container {
+  position: relative;
+  width: 600px;
+  z-index: 2;
+}
+.contactdetails-container > p {
+  margin-bottom: 2rem;
+  margin-left: .5rem;
+}
+.contactdetails-container > h2 {
+  margin-bottom: 1rem;
+  color: var(--color-secondary-a);
+  font-size: 5rem;
+  line-height: 4rem;
+}
+
+.contactform-container {
+  margin-left: 5rem;
+  margin-bottom: 5rem;
+  padding-top: 20px;
+  position: relative;
+  z-index: 2;
+}
+.contactform-container > p {
+  text-align: center;
+}
+.contactform-container label {
+  font-size: var(--fs-body);
+  color: var(--color-secondary-c);
+}
+.contactform-container input:nth-child(2), input:nth-child(4), 
+input:nth-child(6), input:nth-child(8) {
+  width: 500px;
+  margin-bottom: 1rem;
+}
+.contactform-container input:nth-child(8) {
+  height: 400px;
+}
+.contactform-container button {
+  border: 0;
+  margin-top: 5px;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: var(--color-secondary-a);
+  transition: .2s;
+}
+.contactform-container button:hover {
+  cursor: pointer;
+  background-color: var(--color-secondary-b);
+  transition: .2s;
+}
+
+input {
+  display: block;
+  border-radius: 10px;
+  border: 2px solid var(--color-secondary-b);
+  background-color: white;
+}
+

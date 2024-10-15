@@ -1,9 +1,9 @@
 .nav-button {
-  margin-top: 1.5rem;
-  margin-left: 2rem;
-  position: absolute;
-  font-size: var(--fs-h1);
-  z-index: 2;
+  top: 1.5rem;
+  left: 2rem;
+  position: fixed;
+  font-size: var(--fs-l);
+  z-index: 51;
   transition: .5s;
   cursor: pointer;
 }
@@ -13,17 +13,29 @@
 .nav-button-closed {
   color: var(--color-secondary-a);
 }
+.nav-blur {
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(77, 2, 22, 0.231);
+  z-index: 49;
+  transition: .3s;
+}
+.nav-blur-closed {
+  background-color: rgba(0, 0, 0, 0);
+  transition: .3s;
+}
 
 .nav-container {
   position: fixed;
-  width: 250px;
+  width: 300px;
   height: 100svh;
   background-color: var(--color-primary-b);
   transition: .3s;
-  z-index: 1;
+  z-index: 50;
 }
 .nav-container-closed {
-  transform: translate(-250px, 0px);
+  transform: translate(-300px, 0px);
   transition: .3s;
 }
 
@@ -47,12 +59,14 @@
   color: var(--color-primary-c);
 }
 
-.nav-list > *{
+.nav-list > * {
   cursor: pointer;
+  text-decoration: none;
+  color: var(--color-primary-c);
 }
 
 .nav-list > *:hover::after {
-  width: 10rem;
+  width: 13rem;
 }
 
 /* Divider below each item */
@@ -61,7 +75,7 @@
   margin-top: .5rem;
   margin-bottom: 1.7rem;
   display: block;
-  width: 8rem;
+  width: 11rem;
   height: 2px;
   background-color: var(--color-primary-c);
   transition: .3s;

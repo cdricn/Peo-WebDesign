@@ -1,5 +1,5 @@
 #main-wrapper {
-  --color-primary-a: #FFDCE5;
+  --color-primary-a: #ffe8ee;
   --color-primary-b: #FFABC1;
   --color-primary-c: #ffffff;
 
@@ -11,29 +11,49 @@
   --ff-h1: 'VisbyRoundHeavy';
   --ff-body: 'VisbyRoundBold';
   
-  --fs-xl: clamp(54.4px, calc(3.4rem + ((1vw - 7.68px) * 6.3889)), 128px);
+  --fx-xxl: 300px;
+  --fs-vl: 100px;
+  --fs-l: 80px;
+  --fs-h4: 30px;
+  --fs-body: 18px;
+
+  /*--fs-xl: clamp(54.4px, calc(3.4rem + ((1vw - 7.68px) * 6.3889)), 128px);
   --fs-l: clamp(54.4px, calc(3.4rem + ((1vw - 7.8px) * 4)), 100px);
   --fs-h1: clamp(49px, calc(3.0625rem + ((1vw - 7.8px) * 1.8421)), 70px); 
   --fs-h2: clamp(24px, calc(1.5rem + ((1vw - 7.8px) * 1.4035)), 40px);
   --fs-h4: clamp(18px, calc(1.125rem + ((1vw - 7.68px) * 0.5208)), 24px);
-  --fs-body: clamp(14px, calc(0.875rem + ((1vw - 7.68px) * 0.1736)), 16px);
-
-  min-height: 100svh;
-  background-color: var(--color-primary-a);
+  --fs-body: clamp(14px, calc(0.875rem + ((1vw - 7.68px) * 0.1736)), 16px);*/
 }
-/*
-#main-wrapper::after {
+
+p {
+  font-size: var(--fs-body);
+}
+
+.content-wrapper {
+  padding-top: 18rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: fit-content;
+  justify-content: center;
+  overflow-x: hidden;
+  border: 1px solid green;
+}
+
+.main-footer {
+  position: relative;
+  border: 1px solid red;
+}
+.footer-bar {
   content: "";
   margin: auto;
-  position: absolute;
-  bottom: 2.5rem;
+  position: fixed;
+  bottom: 1.5rem;
   left: 0;
   right: 0;
   width: 90%;
   height: 4px;
-  background-color: var(--color-primary-c);
-}
-*/
-p {
-  font-size: var(--fs-body);
+  background-color: white;
+  z-index: -1;
 }

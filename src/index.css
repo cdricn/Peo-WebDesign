@@ -5,15 +5,13 @@
   font-size: 16px;
 
   color-scheme: light dark;
-  color: #F891A9;
-  background-color: rgb(252, 252, 252);
+  color: #532C35;
+  background-color: #ffe8ee;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  min-height: 100%;
 }
 
 *, *::before, *::after {
@@ -27,7 +25,7 @@
   user-select: none;
 }
 
-body {
+html, body {
   min-height: 100%;
   overflow: auto;
   text-decoration: none;

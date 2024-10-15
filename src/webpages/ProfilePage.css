@@ -1,0 +1,42 @@
+
+.profileinfo-container {
+  padding-top: .5rem;
+}
+.profileinfo-container::before {
+  content: 'PROFILE';
+  position: absolute;
+  top: 0;
+  left: 18rem;
+  color: var(--color-primary-c);
+  font-size: var(--fx-xxl);
+  z-index: 1;
+}
+
+.profileinfo-container > h1 {
+  padding-left: 5rem;
+  position: relative;
+  font-size: 5rem;
+  line-height: 4.5rem;
+  color: var(--color-secondary-a);
+  z-index: 2;
+}
+.profile-description {
+  margin-top: 2rem;
+  padding-left: 6.3rem;
+  min-width: fit-content;
+  color: var(--color-secondary-c);
+}
+.profile-description > span {
+  color: var(--color-secondary-a);
+}
+
+.image-container {
+  position: relative;
+  top: -150px;
+  height: 1200px;
+  width: 800px;
+  background-image: url('../assets/images/image2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
