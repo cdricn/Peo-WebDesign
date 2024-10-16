@@ -12,21 +12,16 @@ function App() {
 
   return (
     <>
-      <div id='main-wrapper'>
-        <Router>
-          <Routes>
-            <Route element={<Layout />}>
-              <Route path='/' element={<MainPage />}/>
-              <Route path='/profilepage' element={<ProfilePage/>}/>
-              <Route path='/activitypage' element={<ActivityPage/>}/>
-              <Route path='/contactpage' element={<ContactPage/>}/>
-            </Route>
-          </Routes>
-        </Router>
-      </div>
-      <div className='main-footer'>
-        <div className='footer-bar'></div>
-      </div>
+      <Router>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path='/' element={<MainPage />}/>
+            <Route path='/profilepage' element={<ProfilePage/>}/>
+            <Route path='/activitypage' element={<ActivityPage/>}/>
+            <Route path='/contactpage' element={<ContactPage/>}/>
+          </Route>
+        </Routes>
+      </Router>
     </>
   )
 }

@@ -5,17 +5,19 @@ function MainPage() {
 
   return (
     <>
-    <div className='mainpage-image-container'>
-      <div className='mainpage-image'>
+    <div className='home-height'>
+      <div className='home-image-container'>
+        <div className='home-image'>
+        </div>
       </div>
-    </div>
-    <div className='mainpage-content'>
-      <div className='mainpage-title'>
-        <h1>PEO</h1>
-        <h1>YUKINOSHITA</h1>
-      </div>
-      <div className='mainpage-links'>
-        <LinkGroup />
+      <div className='home-content-container'>
+        <div className='home-title'>
+          <h1>PEO</h1>
+          <h1>YUKINOSHITA</h1>
+        </div>
+        <div className='home-links'>
+          <LinkGroup />
+        </div>
       </div>
     </div>
     </>

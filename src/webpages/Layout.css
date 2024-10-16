@@ -1,0 +1,38 @@
+#main-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.content-wrapper {
+  padding-top: 18rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: fit-content;
+  justify-content: center;
+  overflow-x: hidden;
+  border: 1px solid green;
+}
+
+.main-footer {
+  position: relative;
+  flex-shrink: 0;
+}
+.main-footer::before {
+  content: "";
+  margin: auto;
+  position: fixed;
+  bottom: 1.5rem;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: 4px;
+  background-color: white;
+  z-index: -1;
+}
