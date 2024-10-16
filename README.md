@@ -11,5 +11,5 @@ Main Page
 ![image](https://github.com/user-attachments/assets/4dbbea3c-e966-4df2-bc49-61cb11783382)
 Profile Page (Zoomed out to fit screenshot)
 ![image](https://github.com/user-attachments/assets/933cb1b6-53b4-49f3-8adf-c5602ae724ff)
-Contact Page
+Contact Page (Zoomed out to fit screenshot)
 ![image](https://github.com/user-attachments/assets/0bbf9769-bfd5-414e-ba0a-2697e31fb512)
