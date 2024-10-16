@@ -11,19 +11,18 @@
   --ff-h1: 'VisbyRoundHeavy';
   --ff-body: 'VisbyRoundBold';
   
+  /*
+  All clamps are calculated using https://websemantics.uk/tools/fluid-responsive-property-calculator/
+  Calc basis is desired value at min width, desired value at max width for range
+  and 340px min viewport, 1920px/media query width for max viewport
+  */
+
   --fx-xxl: 300px;
   --fs-vl: 100px;
   --fs-vl-cl1360: clamp(43px, calc(2.6875rem + ((1vw - 3.4px) * 5.5882)), 100px);
   --fs-l: 80px;
   --fs-h4: 30px;
   --fs-body: 18px;
-  
-  /*--fs-xl: clamp(54.4px, calc(3.4rem + ((1vw - 7.68px) * 6.3889)), 128px);
-  --fs-l: clamp(54.4px, calc(3.4rem + ((1vw - 7.8px) * 4)), 100px);
-  --fs-h1: clamp(49px, calc(3.0625rem + ((1vw - 7.8px) * 1.8421)), 70px); 
-  --fs-h2: clamp(24px, calc(1.5rem + ((1vw - 7.8px) * 1.4035)), 40px);
-  --fs-h4: clamp(18px, calc(1.125rem + ((1vw - 7.68px) * 0.5208)), 24px);
-  --fs-body: clamp(14px, calc(0.875rem + ((1vw - 7.68px) * 0.1736)), 16px);*/
 }
 
 p {

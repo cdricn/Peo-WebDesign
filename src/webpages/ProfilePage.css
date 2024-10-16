@@ -1,29 +1,30 @@
 
 .profileinfo-container {
   padding-top: .5rem;
+  padding-left: 5rem;
 }
 .profileinfo-container::before {
   content: 'PROFILE';
   position: absolute;
   top: 0;
-  left: 18rem;
+  left: clamp(-15px, calc(-0.9375rem + ((1vw - 3.4px) * 19.1772)), 288px);
   color: var(--color-primary-c);
-  font-size: var(--fx-xxl);
+  font-size: 300px;
   z-index: 1;
 }
 
 .profileinfo-container > h1 {
-  padding-left: 5rem;
   position: relative;
-  font-size: 5rem;
-  line-height: 4.5rem;
+  font-size: clamp(60.8px, calc(3.8rem + ((1vw - 3.4px) * 1.2152)), 80px);
+  line-height: clamp(56px, calc(3.5rem + ((1vw - 3.4px) * 1.0127)), 72px);
   color: var(--color-secondary-a);
   z-index: 2;
 }
 .profile-description {
   margin-top: 2rem;
-  padding-left: 6.3rem;
+  padding-left: clamp(0px, calc(0rem + ((1vw - 3.4px) * 1.3165)), 20.8px);
   min-width: fit-content;
+  max-width: 400px;
   color: var(--color-secondary-c);
 }
 .profile-description > span {
@@ -34,9 +35,23 @@
   position: relative;
   top: -150px;
   height: 1200px;
-  width: 800px;
+  width: clamp(340px, calc(21.25rem + ((1vw - 3.4px) * 29.1139)), 800px);
   background-image: url('../assets/images/image2.png');
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 2;
+}
+
+@media (width < 1110px) {
+  .profileinfo-container::before {
+    top: clamp(0px, calc(5rem + ((1vw - 3.4px) * -7.9523)), 80px);
+    font-size: clamp(120px, calc(7.5rem + ((1vw - 3.4px) * 23.3766)), 300px);
+  }
+  .profileinfo-container {
+    padding-left: 0;
+  }
+  .image-container {
+    top: 2.5rem;
+    height: clamp(650px, calc(40.625rem + ((1vw - 3.4px) * 45.4545)), 1000px);
+  }
 }
