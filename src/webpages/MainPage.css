@@ -26,7 +26,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0% 700px;
-  transition: .3s;
 }
 
 .home-content-container {
@@ -41,7 +40,6 @@
   line-height: 5.3rem;
   font-size: var(--fs-vl);
   color: var(--color-secondary-a);
-  transition: .5s;
 }
 .home-title > :nth-child(2){
   padding-left: 3.5rem;

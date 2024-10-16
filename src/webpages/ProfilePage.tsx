@@ -20,6 +20,9 @@ function ProfilePage() {
         </div>
         <div className='image-container'>
         </div>
+        <div className='circle-container'>
+          <div className='circle'></div>
+        </div>
       </div>
     </>
   );

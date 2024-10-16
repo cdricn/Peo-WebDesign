@@ -6,6 +6,7 @@
 
 main {
   flex-grow: 1;
+  background: linear-gradient(0deg, rgba(255,226,227,1) 0%, rgba(255,232,238,1) 51%);
 }
 
 .content-wrapper {
@@ -17,6 +18,7 @@ main {
   min-width: fit-content;
   justify-content: center;
   overflow: hidden;
+  min-height: 100vh;
 }
 
 .main-footer {
@@ -26,14 +28,14 @@ main {
 .main-footer::before {
   content: "";
   margin: auto;
+  border-radius: 4px;
   position: absolute;
-  bottom: 1.5rem;
+  bottom: 2.5rem;
   left: 0;
   right: 0;
   width: 90%;
-  height: 4px;
+  height: 8px;
   background-color: white;
-  z-index: -1;
 }
 
 @media (width < 1110px) {

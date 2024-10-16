@@ -18,6 +18,7 @@
   */
 
   --fx-xxl: 300px;
+  --fx-xxl-cl1110: clamp(120px, calc(7.5rem + ((1vw - 3.4px) * 23.3766)), 300px);
   --fs-vl: 100px;
   --fs-vl-cl1360: clamp(43px, calc(2.6875rem + ((1vw - 3.4px) * 5.5882)), 100px);
   --fs-l: 80px;

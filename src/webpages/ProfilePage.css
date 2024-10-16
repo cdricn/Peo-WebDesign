@@ -9,16 +9,28 @@
   top: 0;
   left: clamp(-15px, calc(-0.9375rem + ((1vw - 3.4px) * 19.1772)), 288px);
   color: var(--color-primary-c);
-  font-size: 300px;
+  font-size: var(--fx-xxl);
   z-index: 1;
 }
-
-.profileinfo-container > h1 {
+.profileinfo-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 10px;
+  top: 220px;
+  right: -1550px;
+  height: 8px;
+  width: 100%;
+  background-color: var(--color-primary-c);
+  z-index: 1;
+}
+.profileinfo-container > * {
   position: relative;
+  z-index: 2;
+}
+.profileinfo-container > h1 {
   font-size: clamp(60.8px, calc(3.8rem + ((1vw - 3.4px) * 1.2152)), 80px);
   line-height: clamp(56px, calc(3.5rem + ((1vw - 3.4px) * 1.0127)), 72px);
   color: var(--color-secondary-a);
-  z-index: 2;
 }
 .profile-description {
   margin-top: 2rem;
@@ -34,7 +46,7 @@
 .image-container {
   position: relative;
   top: -150px;
-  height: 1200px;
+  height: clamp(900px, calc(56.25rem + ((1vw - 11.1px) * 37.037)), 1200px);
   width: clamp(340px, calc(21.25rem + ((1vw - 3.4px) * 29.1139)), 800px);
   background-image: url('../assets/images/image2.png');
   background-repeat: no-repeat;
@@ -42,10 +54,27 @@
   z-index: 2;
 }
 
+.circle-container {
+  position: absolute;
+  bottom: -0;
+  right: -0;
+  overflow: hidden;
+}
+.circle {
+  position: relative;
+  border-radius: 1000px;
+  bottom: clamp(-1200px, calc(-75rem + ((1vw - 11.1px) * 30.8642)), -950px);
+  right: clamp(-1200px, calc(-75rem + ((1vw - 11.1px) * 30.8642)), -950px);
+  width: 2000px;
+  height: 2000px;
+  background-color: var(--color-primary-c);
+  z-index: 1;
+}
+
 @media (width < 1110px) {
   .profileinfo-container::before {
     top: clamp(0px, calc(5rem + ((1vw - 3.4px) * -7.9523)), 80px);
-    font-size: clamp(120px, calc(7.5rem + ((1vw - 3.4px) * 23.3766)), 300px);
+    font-size: var(--fx-xxl-cl1110);
   }
   .profileinfo-container {
     padding-left: 0;
@@ -53,5 +82,10 @@
   .image-container {
     top: 2.5rem;
     height: clamp(650px, calc(40.625rem + ((1vw - 3.4px) * 45.4545)), 1000px);
+  }
+  .circle {
+    margin: auto;
+    bottom: clamp(-1600px, calc(-100rem + ((1vw - 3.4px) * 25.974)), -1400px);
+    right: clamp(-825px, calc(-51.5625rem + ((1vw - 3.4px) * 48.0519)), -455px);
   }
 }
