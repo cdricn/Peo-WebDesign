@@ -13,6 +13,7 @@
   
   --fx-xxl: 300px;
   --fs-vl: 100px;
+  --fs-vl-cl1360: clamp(43px, calc(2.6875rem + ((1vw - 3.4px) * 5.5882)), 100px);
   --fs-l: 80px;
   --fs-h4: 30px;
   --fs-body: 18px;
