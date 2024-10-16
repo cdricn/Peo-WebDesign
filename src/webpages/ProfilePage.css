@@ -3,6 +3,7 @@
   padding-top: .5rem;
   padding-left: 5rem;
 }
+
 .profileinfo-container::before {
   content: 'PROFILE';
   position: absolute;
@@ -23,6 +24,7 @@
   background-color: var(--color-primary-c);
   z-index: 1;
 }
+
 .profileinfo-container > * {
   position: relative;
   z-index: 2;

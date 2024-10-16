@@ -27,6 +27,7 @@
 }
 
 .nav-container {
+  border-right: 2px solid var(--color-primary-c);
   position: fixed;
   width: 300px;
   height: 100svh;
