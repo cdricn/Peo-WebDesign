@@ -1,33 +1,22 @@
-
-.contactinfo-container::before {
-  content: 'CONTACT';
-  position: absolute;
-  top: 0;
-  left: 18rem;
-  color: var(--color-primary-c);
-  font-size: var(--fx-xxl);
-  z-index: 1;
-}
-
 .contactdetails-container {
   position: relative;
-  width: 600px;
+  max-width: 600px;
+  min-width: 340px;
   z-index: 2;
 }
 .contactdetails-container > p {
   margin-bottom: 2rem;
-  margin-left: .5rem;
+  margin-left: .1rem;
 }
 .contactdetails-container > h2 {
   margin-bottom: 1rem;
   color: var(--color-secondary-a);
-  font-size: 5rem;
-  line-height: 4rem;
+  font-size: var(--fs-l-smaller);
+  line-height: calc(var(--fs-l-smaller) - 10px);
 }
 
 .contactform-container {
   margin-bottom: 5rem;
-  margin-left: 3rem;
   padding-top: 20px;
   position: relative;
   z-index: 2;
@@ -40,19 +29,20 @@
   color: var(--color-secondary-c);
 }
 .contactform-container input:nth-child(2), input:nth-child(4), 
-input:nth-child(6), input:nth-child(8) {
+input:nth-child(6), textarea {
   width: 500px;
   margin-bottom: 1rem;
 }
-.contactform-container input:nth-child(8) {
+.contactform-container textarea {
   height: 400px;
+  resize: none;
 }
 .contactform-container button {
   border: 0;
-  margin-top: 5px;
+  margin-top: 3px;
   height: 40px;
   width: 100px;
-  border-radius: 10px;
+  border-radius: 4px;
   background-color: var(--color-secondary-a);
   transition: .2s;
 }
@@ -62,10 +52,25 @@ input:nth-child(6), input:nth-child(8) {
   transition: .2s;
 }
 
-input {
+input, textarea {
   display: block;
-  border-radius: 10px;
+  border-radius: 4px;
+  padding: .2rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  color: var(--color-secondary-c);
   border: 2px solid var(--color-secondary-b);
   background-color: white;
 }
+input:focus, textarea:focus {
+  border: 2px solid var(--color-secondary-a);
+  outline: none;
+}
 
+@media (width < 1110px) {
+  .contactform-container input:nth-child(2), input:nth-child(4), 
+  input:nth-child(6), textarea {
+    width: clamp(320px, calc(20rem + ((1vw - 3.4px) * 23.3766)), 500px);
+    margin-bottom: 1rem;
+  }
+}

@@ -36,7 +36,7 @@
   z-index: 50;
 }
 .nav-container-closed {
-  transform: translate(-300px, 0px);
+  transform: translate(-100%, 0px);
   transition: .3s;
 }
 
@@ -54,6 +54,9 @@
 } */
 
 .nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
   margin-top: 13rem;
   padding-left: 2.5rem;
   font-size: var(--fs-h4);
@@ -73,11 +76,22 @@
 /* Divider below each item */
 .nav-list > *::after {
   content: "";
-  margin-top: .5rem;
-  margin-bottom: 1.7rem;
+  position: absolute;
   display: block;
+  margin-top: .4rem;
   width: 11rem;
   height: 2px;
   background-color: var(--color-primary-c);
   transition: .3s;
+}
+
+@media (width < 600px) {
+  .nav-container {
+    width: 100%;
+    border-right: 0px;
+  }
+  .nav-button {
+    top: .2rem;
+    left: .5rem;
+  }
 }

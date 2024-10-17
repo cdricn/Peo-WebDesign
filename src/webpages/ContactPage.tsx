@@ -46,7 +46,7 @@ function ContactForm() {
         <label>Subject:</label>
         <input type='text' id='subject' name='subject'></input>
         <label>Message:</label>
-        <input type='text' id='message' name='message'></input>
+        <textarea id='message' name='message'></textarea>
       </form>
       <button id='submit-button'>Submit</button>
     </>
@@ -57,11 +57,15 @@ function ContactPage() {
   return (
     <> 
       <div className='content-wrapper'>
+        <div className='content-header'>CONTACT</div>
         <div className='contactinfo-container'>
           <ContactDetails />
         </div>
         <div className='contactform-container'>
           <ContactForm />
+        </div>
+        <div className='circle-container'>
+          <div className='circle'></div>
         </div>
       </div>
     </>

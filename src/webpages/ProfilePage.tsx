@@ -1,12 +1,13 @@
-import './ProfilePage.css'
+import styles from './ProfilePage.module.css'
 
 function ProfilePage() {
   return (
     <>
       <div className='content-wrapper'>
-        <div className='profileinfo-container'>
+        <div className='content-header'>PROFILE</div>
+        <div className={styles['profileinfo-container']}>
           <h1>Peo <br/> Yukinoshita</h1>
-          <p className='profile-description'>
+          <p className={styles['profile-description']}>
             <span>Height:</span> 150cm <br/>
             <span>Birthday:</span> May 14th <br/>
             <span>Likes:</span> Games, peonies, potatoes, English <br/>
@@ -18,10 +19,10 @@ function ProfilePage() {
             She is studying English hard to chat with everyone.
           </p>
         </div>
-        <div className='image-container'>
+        <div className={styles['image-container']}>
         </div>
-        <div className='circle-container'>
-          <div className='circle'></div>
+        <div className={styles['circle-container']}>
+          <div className={styles['circle']}></div>
         </div>
       </div>
     </>

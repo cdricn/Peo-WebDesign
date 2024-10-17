@@ -3,7 +3,7 @@
   padding-top: .5rem;
   padding-left: 5rem;
 }
-
+/*
 .profileinfo-container::before {
   content: 'PROFILE';
   position: absolute;
@@ -23,14 +23,14 @@
   width: 100%;
   background-color: var(--color-primary-c);
   z-index: 1;
-}
+}*/
 
 .profileinfo-container > * {
   position: relative;
   z-index: 2;
 }
 .profileinfo-container > h1 {
-  font-size: clamp(60.8px, calc(3.8rem + ((1vw - 3.4px) * 1.2152)), 80px);
+  font-size: var(--fs-l);
   line-height: clamp(56px, calc(3.5rem + ((1vw - 3.4px) * 1.0127)), 72px);
   color: var(--color-secondary-a);
 }
@@ -74,10 +74,6 @@
 }
 
 @media (width < 1110px) {
-  .profileinfo-container::before {
-    top: clamp(0px, calc(5rem + ((1vw - 3.4px) * -7.9523)), 80px);
-    font-size: var(--fx-xxl-cl1110);
-  }
   .profileinfo-container {
     padding-left: 0;
   }
