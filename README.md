@@ -3,6 +3,19 @@ Redesign of a vtuber's website to practice responsive ui/ux. Created using TypeS
 
 This was made purely for practice and is not related to the official website. All rights to the images belong to the owners. Original website is https://www.yukinoshitapeo.com/.
 
+# How to preview
+To preview the webpage itself, you'll need to do the following:
+1. Install Node.js and npm
+2. Clone the repo
+3. Run `npm install` in the project directory
+4. Run `npm run dev`
+
+Alternatively, if you want to build the project, you can do the following:
+1. Run `$ npm run build` to build app
+2. Run `$ npm run preview` to preview
+
+For more information about building, please visit [Vite's guide](https://vite.dev/guide/static-deploy).
+  
 # Preview
 Browser: <br/>
 Main Page 
