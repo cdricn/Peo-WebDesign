@@ -10,6 +10,8 @@
   width: 100%;
   height: 520px;
   overflow-x: hidden;
+  animation-name: toBottom;
+  animation-duration: 2s;
 }
 .home-image{
   margin: auto;
@@ -33,6 +35,8 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  animation-name: toBottomBody;
+  animation-duration: 2s;
 }
 
 .home-title {
@@ -48,6 +52,15 @@
 .home-links {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+@keyframes toBottom {
+  0% {opacity: 0%; transform: translateY(-100px);}
+  100% {opacity: 100%; transform: translateY(0px);}
+}
+@keyframes toBottomBody {
+  0% {opacity: 0%; transform: translateY(-130px);}
+  100% {opacity: 100%; transform: translateY(0px);}
 }
 
 @media (width < 1360px) {

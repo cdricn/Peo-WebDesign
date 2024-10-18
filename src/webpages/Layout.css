@@ -20,6 +20,8 @@ main {
   justify-content: center;
   overflow: hidden;
   min-height: 100vh;
+  animation-name: toRightBody;
+  animation-duration: 2s;
 }
 .content-header {
   position: absolute;
@@ -29,12 +31,14 @@ main {
   font-size: var(--fx-xxl);
   font-family: var(--ff-body);
   z-index: 1;
+  animation-name: toRight;
+  animation-duration: 2s;
 }
 .content-header::before {
   content: '';
   position: absolute;
   border-radius: 10px;
-  top: 220px;
+  top: 235px;
   left: calc(100% + 50px);
   height: 8px;
   width: 10000px;
@@ -57,6 +61,16 @@ main {
   width: 90%;
   height: 8px;
   background-color: var(--color-primary-c);
+}
+
+@keyframes toRight {
+  0% {opacity: 0%; transform: translateX(-100px);}
+  100% {opacity: 100%; transform: translateX(0px);}
+}
+
+@keyframes toRightBody {
+  0% {opacity: 0%; transform: translateX(-150px); z-index: 2;}
+  100% {opacity: 100%; transform: translateX(0px); z-index: 2;}
 }
 
 @media (width < 1110px) {

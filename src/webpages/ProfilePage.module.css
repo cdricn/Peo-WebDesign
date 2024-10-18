@@ -24,7 +24,6 @@
   background-color: var(--color-primary-c);
   z-index: 1;
 }*/
-
 .profileinfo-container > * {
   position: relative;
   z-index: 2;
