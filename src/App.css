@@ -24,6 +24,7 @@
   --fs-vl-cl1360: clamp(43px, calc(2.6875rem + ((1vw - 3.4px) * 5.5882)), 100px);
   --fs-l: clamp(60.8px, calc(3.8rem + ((1vw - 3.4px) * 1.2152)), 80px);
   --fs-l-smaller: clamp(45px, calc(2.8125rem + ((1vw - 3.4px) * 2.2152)), 80px);
+  --fs-h3: 40px;
   --fs-h4: 30px;
   --fs-body: 18px;
 }

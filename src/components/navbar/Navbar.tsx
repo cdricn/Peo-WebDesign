@@ -1,5 +1,5 @@
 import styles from './Navbar.module.css'
-import React, { useState } from "react";
+import { useState } from "react";
 import { FiMenu  } from "react-icons/fi";
 import { Link } from "react-router-dom"
 
@@ -28,16 +28,14 @@ function NavBar() {
 
   return (
     <>
-      <div 
-        className={colorToggle(navColor)} 
+      <div className={colorToggle(navColor)} 
         onClick={() => setNavColor(curr => !curr)}>
         <FiMenu />
       </div>
       <div className={navToggle}>
         <NavItems />
       </div>
-      <div 
-        className={navBlur}
+      <div className={navBlur}
         onClick={() => setNavColor(curr => !curr)}>
       </div>
     </>
